@@ -111,11 +111,9 @@ class newOrders extends StatelessWidget {
                                   style: AppTextStyles.blackHeader2,
                                 ),
                                 Text(
-                                  _.order[index].firstName.toString() +
-                                      _.order[index].lastName.toString(),
+                                  _.order[index].userName.toString(),
                                   style: AppTextStyles.blackHeader3,
                                 ),
-                                Text(_.order[index].phone.toString()),
                                 Divider(
                                   color: Colors.grey.withOpacity(0.5),
                                   thickness: 2,

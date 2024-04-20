@@ -22,9 +22,9 @@ class OrderController extends GetxController {
     try {
       // isLoading.value = true;
       var response = await http.get(Uri.parse(GET_ORDERS));
-
       // Future.delayed(Duration(seconds: 10), () {
       if (response.statusCode == 200) {
+
         print("Hit Successfully");
         // isLoading.value = false;
         var products = jsonDecode(response.body)["data"];

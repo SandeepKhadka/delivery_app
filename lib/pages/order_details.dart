@@ -67,10 +67,10 @@ class orderDetails extends StatelessWidget {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text(
-                                        orders.phone.toString(),
-                                        style: AppTextStyles.blackHeader2Bold,
-                                      ),
+                                      // Text(
+                                      //   orders.phone.toString(),
+                                      //   style: AppTextStyles.blackHeader2Bold,
+                                      // ),
                                       Icon(
                                         Icons.call,
                                         color: bluecolor,
@@ -138,9 +138,10 @@ class orderDetails extends StatelessWidget {
                                     "Order Placed By",
                                     style: AppTextStyles.blackHeader2Bold,
                                   ),
-                                  Text(orders.firstName.toString() +
-                                      orders.lastName.toString()),
-                                  Text(orders.phone),
+                                  Text(
+                                    _.order[index].userName.toString(),
+                                    style: AppTextStyles.blackHeader3,
+                                  ),
                                   Divider(
                                     thickness: 2,
                                     color: Colors.grey.withOpacity(0.5),
@@ -188,12 +189,9 @@ class orderDetails extends StatelessWidget {
                                     thickness: 2,
                                     color: Colors.grey,
                                   ),
-                                  Text("Customer Billing Address"),
-                                  Text(orders.country.toString() ?? ""),
-                                  Text(orders.state.toString() ?? ""),
-                                  Text(orders.city.toString() ?? ""),
-                                  Text(orders.address.toString() ?? ""),
-                                  Text(orders.postcode.toString() ?? ""),
+                                  Text("Delivery Address",
+                                      style: AppTextStyles.blackHeader2Bold),
+                                  Text(orders.deliveryAddress.toString() ?? ""),
                                   SizedBox(
                                     height: 5,
                                   ),
@@ -224,11 +222,11 @@ class orderDetails extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  Text(orders.scountry.toString() ?? ""),
-                                  Text(orders.sstate.toString() ?? ""),
-                                  Text(orders.scity.toString() ?? ""),
-                                  Text(orders.saddress.toString() ?? ""),
-                                  Text(orders.spostcode.toString() ?? ""),
+                                  // Text(orders.scountry.toString() ?? ""),
+                                  // Text(orders.sstate.toString() ?? ""),
+                                  // Text(orders.scity.toString() ?? ""),
+                                  // Text(orders.saddress.toString() ?? ""),
+                                  // Text(orders.spostcode.toString() ?? ""),
                                   Divider(
                                     thickness: 2,
                                     color: Colors.grey,
